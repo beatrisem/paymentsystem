@@ -1,0 +1,5 @@
+package lv.beatrise.employee;
+
+public class SalaryEmployee {
+
+}

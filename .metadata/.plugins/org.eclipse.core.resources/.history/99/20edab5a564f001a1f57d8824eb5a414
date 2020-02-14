@@ -1,0 +1,7 @@
+package lv.beatrise.employee;
+
+import lv.beatrise.paysystem.Payee;
+
+public class SalaryEmployee implements Payee {
+	
+}
