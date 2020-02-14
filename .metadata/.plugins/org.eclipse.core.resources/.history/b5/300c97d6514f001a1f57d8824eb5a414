@@ -1,0 +1,9 @@
+package lv.beatrise.paysystem;
+
+public interface Payment {
+
+	String name();
+	Double grossPayment();
+	Integer bankAccount();
+	
+}

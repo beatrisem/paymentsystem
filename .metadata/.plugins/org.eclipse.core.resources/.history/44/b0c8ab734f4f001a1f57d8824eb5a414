@@ -1,0 +1,5 @@
+package lv.beatrise.paysystem;
+
+public interface Payment {
+
+}
