@@ -2,15 +2,15 @@ package lv.beatrise.paysystem;
 
 public class PaymentSystem {
 	
-	private list<Payee>payee;
+	private list<Payment>payment;
 	
-	public Payee(){
-		payee = new ArrayList<>;
+	public Payment(){
+		payment = new ArrayList<>;
 	}
 	
 	public void addPayee(Payee payee) {
 		if(!payees.contains(payee)){
-			payees.add(payee);
+			payees.add(payee)
 		}
 	}
 	public void processPayments() {
@@ -22,7 +22,7 @@ public class PaymentSystem {
 		System.out.println("transferred to account"+ payee.bankAccount);
 	}
 	
-}
+	
 	
 	
 }
