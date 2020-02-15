@@ -1,0 +1,10 @@
+package lv.beatrise.test;
+
+public class TestPayment {
+
+	public static void main(String[] args)
+	
+	PaymentSystem paymentSystem = new PaymentSystem();
+	
+	CommissionEmployees toms = new CommissionEmployees("Toms Ozolins", 2345678, 5000.00);
+}

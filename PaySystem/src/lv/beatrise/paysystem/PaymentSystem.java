@@ -1,28 +1,29 @@
 package lv.beatrise.paysystem;
-
+import lv.beatrise.paysystem.Payee;
+import java.util.ArrayList;
+import java.util.List;
 public class PaymentSystem {
 	
-	private list<Payee>payee;
+	private List<Payee> payees;
 	
-	public Payee(){
-		payee = new ArrayList<>;
+	public PaymentSystem() {
+		payees = new ArrayList<>();
 	}
 	
-	public void addPayee(Payee payee) {
+	public void addPayee(Payee payee){
 		if(!payees.contains(payee)){
 			payees.add(payee);
 		}
 	}
 	public void processPayments() {
-		for (Payee payee : payees)
-		Double grossPayment = payee.grossPayment();
-		
-		System.out.println("to"+ payee.name());
-		System.out.println("gross"+grossPayment);
-		System.out.println("transferred to account"+ payee.bankAccount);
+		for(Payee payee : payees){
+			Double grossPayment = payee.grossPayment();
+			
+			System.out.println("Paying to "+ payee.name());
+			System.out.println("Gross "+ String.format("%1$.2f",grossPayment());
+			System.out.println("Transferred to Account: "+payee.bankAccount());
+			
+		}
 	}
-	
-}
-	
 	
 }

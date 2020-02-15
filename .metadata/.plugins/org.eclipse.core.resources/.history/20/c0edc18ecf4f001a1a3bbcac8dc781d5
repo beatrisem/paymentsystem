@@ -1,0 +1,50 @@
+package lv.beatrise.employee;
+
+import lv.beatrise.paysystem.Payee;
+
+public class ComissionEmployees implements Payee {
+
+	private String name;
+	private Integer bankAccount;
+	protected Double grossWage;
+	private Double grossCommission = 0.0;
+	
+	public ComissionEmployees(String name, Integer bankAccount, Double grossWage) {
+		super();
+		this.name = name;
+		this.bankAccount = bankAccount;
+		this.grossWage = grossWage;
+		
+		
+	}
+
+	@Override
+	public String name() {		
+		return name;
+	}
+
+	@Override
+	public Double grossPayment() {	
+		return grossWage + doCurrentCommission();
+	}
+
+	@Override
+	public Integer bankAccount() {
+		return bankAccount;
+	}
+	
+	
+	private Double doCurrentCommission() {
+		Double commission = grossCommission;
+		grossCommission = 0.0;
+		return commission;
+	}
+	
+	public void giveCommission(Double amount){ 
+		grossCommission += amount;
+		
+		return ;
+	}
+	
+	
+}

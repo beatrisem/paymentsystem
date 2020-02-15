@@ -1,0 +1,21 @@
+package lv.beatrise.employee;
+
+import lv.beatrise.paysystem.Payee;
+
+public class SalaryEmployee extends Employee {
+
+	
+	
+	
+	public SalaryEmployee(String name, Integer bankAccount, Double grossWage) {
+		super(name, bankAccount, grossWage);
+	}
+
+	@Override
+	public Double grossPayment() {
+		// TODO Auto-generated method stub
+		return grossWage;
+	}
+
+	
+}
